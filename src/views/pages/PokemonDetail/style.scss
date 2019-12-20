@@ -25,9 +25,9 @@
 
   display: flex;
   margin: 0 auto;
-  width: 500px;
-  // flex-flow: column;
-  overflow: scroll;
+  // width: 500px;
+  flex-flow: wrap;
+  // overflow: scroll;
 
   img{
     width: 96px;
