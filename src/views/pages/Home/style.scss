@@ -1,0 +1,40 @@
+.wild-pokemon {
+  min-height: 300px;
+  background: firebrick;
+  padding: 15px;
+
+  h2{
+    color: #f3f3f3;
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  &__sprite{
+    display: block;
+    width: 150px;
+    margin: 0px auto;
+  }
+
+  &__catch {
+    width: 200px;
+    height: 35px;
+    display: block;
+    margin: 25px auto;
+    background: #FFCE00;
+    border: none;
+    outline: none;
+    color: #171717;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  h3 {
+    color: #f3f3f3;
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+  }
+}
