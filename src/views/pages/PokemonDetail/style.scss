@@ -22,10 +22,12 @@
 }
 
 .sprites-list{
-  padding: 15px;
+
   display: flex;
   margin: 0 auto;
+  width: 500px;
   // flex-flow: column;
+  overflow: scroll;
 
   img{
     width: 96px;
@@ -41,6 +43,7 @@
 
   img{
     width: 20px;
+    height: 20px;
   }
 
   &__title{

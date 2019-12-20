@@ -17,7 +17,7 @@ export const Layout: React.FC<any> = () => {
       <header className="pokemon-header">
         <img src="/icons/logo.jpg" onClick={() => history.push("/")} />
         {
-          pokemonList.length && history.location.pathname.split("/")[1] !== "pokemon" ? (<img src="/icons/ball.webp" onClick={() => history.push("/pokemon")} />) : (null)
+          pokemonList.length && history.location.pathname.split("/")[1] !== "pokemon" ? (<img src="/icons/ball.png" onClick={() => history.push("/pokemon")} />) : (null)
         }
       </header>
       <SwitchRoute routes={routeList} />
