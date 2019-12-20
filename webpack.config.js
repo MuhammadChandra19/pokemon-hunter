@@ -4,7 +4,7 @@ var package = require('./package.json');
 
 var isProduction =
   process.argv.indexOf('-p') >= 0 || process.env.NODE_ENV === 'production';
-var outPath = path.join(__dirname, './build');
+var outPath = path.join(__dirname, './public');
 
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var MiniCssExtractPlugin = require('mini-css-extract-plugin');
