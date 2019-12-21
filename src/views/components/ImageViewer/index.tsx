@@ -15,7 +15,7 @@ export class ImageViewer extends Component<ImageViewerProps, any> {
     super(props)
     this.myRef = React.createRef();
     this.state = {
-      isLoaded: false
+      isLoaded: false,
     }
   }
 
@@ -24,8 +24,10 @@ export class ImageViewer extends Component<ImageViewerProps, any> {
     if (current.complete) {
       this.loaded()
     } else {
+
       current.addEventListener('load', this.loaded)
     }
+
 
 
   }
@@ -33,10 +35,13 @@ export class ImageViewer extends Component<ImageViewerProps, any> {
   componentWillUnmount() {
     const { current } = this.myRef
     current.removeEventListener('load', this.loaded)
+
   }
 
-  loaded = () => {
+
+  loaded = async () => {
     this.setState({ isLoaded: true })
+
   }
 
   render() {

@@ -4,7 +4,8 @@
    flex-flow: column;
    min-height: 150px;
    padding: 15px;
-   background: #f3f3f3;
+   color: white;
+   // background: #f3f3f3;
    cursor: pointer;
 
    &__sprite{
@@ -23,6 +24,7 @@
       flex: 1;
     display: flex;
     flex-flow: column;
+    color: white;
 
       &__list{
          position: relative;
